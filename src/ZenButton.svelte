@@ -1,6 +1,9 @@
 <script>
     export let type = 'primary';
+    export let rounded = false;
     export let disabled = false;
+    export let width = '100%';
+    export let className = '';
 </script>
 
 <style>
@@ -11,6 +14,7 @@
     text-align: center;
     border-radius: 30px;
     user-select: none;
+    border-radius: 5px;
 }
 
 .primary {
@@ -21,15 +25,22 @@
 .secondary {
     color: #D25F7E;
     border: 1px solid #D25F7E;
-    background-color: transparent;
 }
 
 .disabled {
     opacity: .5;
     cursor: not-allowed;
 }
+
+.rounded {
+    border-radius: 30px;
+}
 </style>
 
-<div class="btn {type}" class:disabled={disabled}>
+<div on:click
+     class="btn {type} {className}"
+     class:disabled={disabled}
+     class:rounded={rounded}
+     style='width: {width}'>
     <slot></slot>
 </div>

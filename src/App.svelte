@@ -10,6 +10,6 @@
 	}
 </style>
 
-<AppButton width="100px">Primary</AppButton>
-<AppButton width="100px" type="secondary">Secondary</AppButton>
-<AppButton width="100px" disabled>Disabled</AppButton>
+<AppButton width="100px" hollow>Primary</AppButton>
+<AppButton width="100px" type="success" rounded>Secondary</AppButton>
+<AppButton width="100px" disabled rounded>Disabled</AppButton>

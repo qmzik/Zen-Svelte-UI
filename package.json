@@ -1,6 +1,8 @@
 {
-  "name": "svelte-app",
+  "name": "zen-svelte-ui",
   "version": "1.0.0",
+  "description": "A UI Component Framework with Svelte",
+  "author": "Nikita Lebedev",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "rollup": "^1.10.1",
@@ -12,6 +14,17 @@
     "sirv-cli": "^0.4.0",
     "svelte": "^3.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:qmzik/Svelte-UI-framework.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "svelte",
+    "ui",
+    "ui-components",
+    "component"
+  ],
   "scripts": {
     "build": "rollup -c",
     "autobuild": "rollup -c -w",

@@ -1,6 +1,6 @@
 <img width="200" src="https://raw.githubusercontent.com/sveltejs/svelte/29052aba7d0b78316d3a52aef1d7ddd54fe6ca84/site/static/images/svelte-android-chrome-512.png">
 
-# SVELTE UI
+# ZEN SVELTE UI
 
 ## Features
 
@@ -10,5 +10,5 @@
 
 # Installation
 ```bash
-npm install svelte-ui
+npm install zen-svelte-ui
 ```

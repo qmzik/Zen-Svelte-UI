@@ -3,7 +3,7 @@
     export let rounded = false;
     export let disabled = false;
     export let width = '100%';
-    export let hollow = '';
+    export let hollow = false;
 </script>
 
 <style>

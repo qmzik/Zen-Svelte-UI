@@ -19,7 +19,7 @@
 }
 
 .primary:hover, .success:hover {
-    opacity: .9;
+    opacity: .8;
 }
 
 .primary {
@@ -32,9 +32,18 @@
     color: white;
 }
 
+.primary_hollow:hover, .success_hollow {
+    background-color: rgba(179, 172, 172, .1)
+}
+
 .primary_hollow {
     color: #6190e8;
     border: 1px #6190e8 solid;
+}
+
+.success_hollow {
+    color: #13ce66;
+    border: 1px #13ce66 solid;
 }
 
 .disabled {

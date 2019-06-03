@@ -1,15 +1,17 @@
 <script>
-	import AppButton from './ZenButton.svelte';
-	function handler() {
-		console.log(1);
-	}
+	import ZenButton from './ZenButton/ZenButton.svelte';
+    import ZenInput from './ZenInput/ZenInput.svelte';
+	function handleInput(e) {
+		name = e.target.value
+    }
+    let name = '';
 </script>
 <style>
-	.item {
-		margin-bottom: 10px;
-	}
+
 </style>
 
-<AppButton width="100px" hollow>Primary</AppButton>
-<AppButton width="100px" type="success" rounded>Secondary</AppButton>
-<AppButton width="100px" disabled rounded>Disabled</AppButton>
+<ZenButton width="100px" hollow>Primary</ZenButton>
+<ZenButton width="100px" type="success" rounded>Secondary</ZenButton>
+<ZenButton width="100px" disabled rounded>Disabled</ZenButton>
+<ZenInput bind:value={name} placeholder="Placeholder" width="200px" disabled></ZenInput>
+<span>{name}</span>

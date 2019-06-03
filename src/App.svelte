@@ -1,6 +1,5 @@
 <script>
-	import ZenButton from './ZenButton/ZenButton.svelte';
-    import ZenInput from './ZenInput/ZenInput.svelte';
+	import { ZenButton, ZenInput } from '../';
 	function handleInput(e) {
 		name = e.target.value
     }

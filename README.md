@@ -12,3 +12,11 @@
 ```bash
 npm install zen-svelte-ui
 ```
+
+# Usage
+In .svelte file
+```html
+<script>
+    import { ZenButton } from 'zen-svelte-ui';
+</script>
+```

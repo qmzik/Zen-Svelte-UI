@@ -1,5 +1,6 @@
 <script>
     export let value = '';
+    export let type = 'text';
     export let placeholder = '';
     export let width = '100%';
     export let focus = false;
@@ -46,12 +47,28 @@
 }
 </style>
 
-<input class="zenInput {status}"
-       bind:value
-       disabled={disabled}
-       placeholder={placeholder}
-       style="width: {width}"
-       on:focus={handleFocus}
-       on:blur={handleBlur}
-       class:focus={focus}
->
+
+
+{#if type === 'password'}
+    <input class="zenInput {status}"
+        type="password"
+        bind:value
+        disabled={disabled}
+        placeholder={placeholder}
+        style="width: {width}"
+        on:focus={handleFocus}
+        on:blur={handleBlur}
+        class:focus={focus}
+    >
+{:else}
+    <input class="zenInput {status}"
+        type="text"
+        bind:value
+        disabled={disabled}
+        placeholder={placeholder}
+        style="width: {width}"
+        on:focus={handleFocus}
+        on:blur={handleBlur}
+        class:focus={focus}
+    >
+{/if}

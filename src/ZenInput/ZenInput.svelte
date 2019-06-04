@@ -3,9 +3,9 @@
     export let type = 'text';
     export let placeholder = '';
     export let width = '100%';
-    export let focus = false;
     export let status = '';
     export let disabled = false;
+    let focus = false;
 
     function handleFocus(e) {
         focus = true;
